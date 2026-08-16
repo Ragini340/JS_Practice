@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>JavaScript Implementation Practice</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- Internal JavaScript -->
+    <script>
+        function showInternalMessage() {
+            alert("This message is from Internal JavaScript");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>JavaScript Implementation</h1>
+
+    <!-- Inline JavaScript -->
+    <button type="button"
+            onclick="alert('This message is from Inline JavaScript')">
+        Inline JavaScript
+    </button>
+
+    <br><br>
+
+    <!-- Internal JavaScript -->
+    <button type="button"
+            onclick="showInternalMessage()">
+        Internal JavaScript
+    </button>
+
+    <br><br>
+
+    <!-- Inline event handling -->
+    <button type="button"
+            onclick="document.getElementById('message').textContent='Hello from JavaScript'">
+        Change Text
+    </button>
+
+    <p id="message">
+        Original Message
+    </p>
+
+</body>
+
+</html>
