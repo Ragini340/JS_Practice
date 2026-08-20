@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>JavaScript Variables</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <h3>Demo on var, let, const</h3>
+
+    <script>
+
+        /*** var ***/
+
+        var a;                 // Variable declaration
+        document.write(a, "<br>");
+
+        a = 100;               // Assignment
+        document.write(a, "<br>");
+
+        var b = 200;           // Initialization
+        document.write(b, "<br>");
+
+
+        /*** let ***/
+
+        let x;                 // Variable declaration
+        x = 111;               // Assignment
+        document.write(x, "<br>");
+
+        let y = 222;           // Initialization
+        document.write(y, "<br>");
+
+        a = 123;               // Modification
+        y = 786;               // Modification
+
+        document.write(a, "<br>", b, "<br>");
+
+
+        /*** const ***/
+
+        const PI = 3.14;       // Initialization
+        document.write(PI, "<br>");
+
+        // PI = 1.6;           // TypeError
+
+        // const N;            // SyntaxError
+
+    </script>
+
+</body>
+
+</html>
