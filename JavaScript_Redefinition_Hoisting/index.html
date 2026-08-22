@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>JavaScript Redefinition and Hoisting</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <h3>Demo on var Redefinition and Hoisting</h3>
+
+    <script>
+
+        /*
+            Redefinition:
+            Defining a variable with the same name again
+            using var is called redefinition.
+        */
+
+        var x = 100;
+
+        document.write(x, "<br>");
+
+        var x = true;
+
+        document.write(x, "<br>");
+
+        var x = "C#";
+
+        document.write(x, "<br>");
+
+
+        /*
+            let and const do not allow
+            redefinition in the same scope.
+        */
+
+        // let x = "JavaScript";     // SyntaxError
+        // const x = "JavaScript";   // SyntaxError
+
+
+        /*
+            var Hoisting:
+            Variable declaration is moved to the top
+            of the current scope during parsing.
+        */
+
+        n = 45;
+
+        document.write(n, "<br>");
+
+        var n;
+
+
+        st = "JavaScript";
+
+        document.write(st, "<br>");
+
+        var st;
+
+
+        /*
+            Function declarations are hoisted.
+        */
+
+        myfun();
+
+        function myfun() {
+
+            if (true) {
+
+                // let j = 11;       // Block level
+                // const j = 11;     // Block level
+
+                var j = 11;          // Function level
+            }
+
+            document.write(j);
+        }
+
+    </script>
+
+</body>
+
+</html>
