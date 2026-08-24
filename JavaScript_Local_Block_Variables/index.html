@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>JavaScript Local and Block Variables</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <h3>Demo on Local & Block Variables</h3>
+
+    <script>
+
+        // Function definition
+        function myfun() {
+
+            // Local variable
+            let x = 100;
+
+            document.write(x, "<br>");
+
+
+            // Block-level variable
+            for (let i = 1; i <= 5; i++) {
+
+                document.writeln(i, " ", x, "<br>");
+            }
+
+            // i cannot be accessed here
+            // document.writeln(i);  // ReferenceError
+        }
+
+
+        // Function call
+        myfun();
+
+        // x cannot be accessed outside the function
+        // document.write(x);  // ReferenceError
+
+    </script>
+
+</body>
+
+</html>
