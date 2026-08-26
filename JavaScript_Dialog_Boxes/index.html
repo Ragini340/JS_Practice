@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>JavaScript Dialog Boxes</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <h3>Demo on Alert, Confirm & Prompt</h3>
+
+    <script>
+
+        // Alert dialog
+        window.alert("Hello World");
+
+        alert(10 + 45);
+
+
+        // Confirm dialog
+        let x = window.confirm("Are you sure to logout?");
+
+        document.write(x, "<br>");
+
+        /*
+        if (x === true) {
+            // Logout code
+        }
+        else {
+            // Stay on same page
+        }
+        */
+
+
+        // Prompt dialog
+        let n = window.prompt("Enter name");
+
+        let a = window.prompt("Enter age", "1");
+
+        document.write(n, " ", a, " years older");
+
+    </script>
+
+</body>
+
+</html>
