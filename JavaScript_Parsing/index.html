@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>JavaScript Parsing</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <h3>Demo on JavaScript Parsing</h3>
+
+    <script>
+
+        document.write(`Demo on Auto Parsing<br>`);
+
+        // Variables initialized as strings
+        let i = "21";
+        let j = "9";
+
+        // Implicit parsing
+        document.write(i - j, `<br>`);
+        document.write(i * j, `<br>`);
+        document.write(i / j, `<br>`);
+        document.write(i * j, `<br>`);
+        document.write(j ** "2", `<br>`);
+
+        document.write(++i, `<br>`);
+        document.write(--j, `<br>`);
+
+
+        document.write(`<br>Demo on Manual Parsing<br>`);
+
+        let x = "15";
+        let y = "7";
+
+
+        // Explicit parsing using parseInt()
+        let s = parseInt(x) + parseInt(y);
+
+        document.write(s, `<br>`);
+
+
+        // Unary plus operator
+        document.write(+x + +y, `<br>`);
+
+        document.write(+x > +y, `<br>`);
+
+
+        // Checking type after parsing
+        document.write(typeof +"123", `<br>`);
+
+
+        // Invalid parsing results in NaN
+        document.write(+"js", `<br>`);
+
+        document.write(10 * "hi", `<br>`);
+
+    </script>
+
+</body>
+
+</html>
