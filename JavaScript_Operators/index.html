@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>JavaScript Operators</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <h3>Demo on JavaScript Operators</h3>
+
+    <script>
+
+        document.write("Demo on Operators<br>");
+
+        let x = 23;
+        let y = 9;
+
+
+        // Arithmetic Operators
+        // +, -, *, /, %, **
+
+        document.write(x + y, "<br>");
+
+        document.write(y * 3, "<br>");
+
+        document.write(y ** 3, "<br>");
+
+        let q = x / y;
+
+        document.write(q, "<br>");
+
+        document.write(q.toFixed(3), "<br>");
+
+        // Rounding operator
+        document.write(q | 0, "<br>");
+
+
+        // Relational Operators
+        // >, <, >=, <=, ==, !=, ===, !==
+
+        document.write(x >= 0, "<br>");
+
+        let z = "9";
+
+        document.write(y == z, "<br>");
+
+        document.write(y === z, "<br>");
+
+        document.write(y != z, "<br>");
+
+        document.write(y !== z, "<br>");
+
+
+        // Logical Operators
+        // &&, ||, !
+
+        document.write(
+            y >= 0 && y <= 100,
+            "<br>"
+        );
+
+
+        // Assignment Operators
+        // =
+
+        // Shorthand Operators
+        // +=, -=, *=, /=, %=, **=
+
+        x += 30;
+        y *= 10;
+
+        document.write(x, "<br>", y, "<br>");
+
+
+        // Concatenation Operator
+
+        document.write("rama" + "rao<br>");
+
+        document.write(100 + "mangos<br>");
+
+        document.write(23 + true, "<br>");
+
+
+        // Increment / Decrement
+        // ++var, var++, --var, var--
+
+        x++;          // Post-increment
+
+        document.write(x, "<br>");
+
+        ++x;          // Pre-increment
+
+        document.write(x, "<br>");
+
+
+        let r = 10 * y--;
+
+        document.write(y, "<br>", r, "<br>");
+
+
+        // Conditional / Ternary Operator
+        // condition ? step1 : step2
+
+        document.write(
+            y % 2 === 0 ? "Even" : "Odd"
+        );
+
+    </script>
+
+</body>
+
+</html>
