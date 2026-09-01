@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>DOM</title>
+
+</head>
+
+<body>
+
+    <h3>Demo on Document Object Properties</h3>
+
+    <script>
+
+        // Document title
+        document.write(`${document.title}<br>`);
+
+        // Change document title
+        document.title = "Title Changed";
+
+
+        // Document URL
+        document.write(`${document.URL}<br>`);
+
+
+        // Head object
+        const h = document.head;
+
+        document.write(`${h}<br>`);
+
+
+        // Body object
+        document.write(`${document.body}<br>`);
+
+
+        // Images collection
+        const img = document.images;
+
+        document.write(`${img}<br>`);
+
+
+        // Links collection
+        const link = document.links;
+
+        document.write(`${link}<br>`);
+
+
+        // Forms collection
+        const form = document.forms;
+
+        document.write(`${form}<br>`);
+
+    </script>
+
+</body>
+
+</html>
