@@ -1,0 +1,51 @@
+﻿<!-- example on DOM -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>DOM</title>
+
+</head>
+
+<body>
+
+    <h3>Demo on document object methods</h3>
+
+    <label>Red</label>
+    <br>
+
+    <label>Green</label>
+    <br>
+
+    <label>Blue</label>
+    <br>
+
+    <h2 class="c">Apple</h2>
+
+    <p class="c">Mango</p>
+
+    <span class="c">Orange</span>
+
+    <hr>
+
+    <script>
+
+        // Get all elements by tag name
+        const lob = document.getElementsByTagName("label");
+
+        document.write(lob, "<br>");
+
+
+        // Get all elements by class name
+        const cob = document.getElementsByClassName("c");
+
+        document.write(cob, "<br>");
+
+    </script>
+
+</body>
+
+</html>
