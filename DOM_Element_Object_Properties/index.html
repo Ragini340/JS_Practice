@@ -1,0 +1,55 @@
+﻿<!-- 22 - DOM: Element Object Properties -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <h3>Demo on element object properties (data manipulation)</h3>
+
+    <h1 id="head1">Hello</h1>
+
+    <input type="text" id="tb1" name="tb1" value="1000" />
+
+    <hr>
+
+    <script>
+        // Paired tag
+        const h1 = document.getElementById("head1");
+
+        document.write(h1.tagName, `<br>`);
+        document.write(h1.id, `<br>`);
+
+        document.write(h1.textContent, `<br>`);
+        document.write(h1.innerHTML, `<br>`);
+
+        // Deletion
+        // h1.textContent = ``;
+
+        // Updation
+        // h1.textContent = `Siva`;
+
+        // Appending
+        // h1.textContent += `Siva`;
+
+
+        // Input tag
+        const tb = document.getElementById("tb1");
+
+        document.write(tb.value, `<br>`);
+
+        // Updation
+        // tb.value = 1234;
+
+        // Appending
+        // tb.value += `mangos`;
+
+        // Deletion
+        tb.value = ``;
+    </script>
+
+</body>
+</html>
