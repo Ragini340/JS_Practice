@@ -1,0 +1,28 @@
+﻿<!-- 23 - DOM: textContent vs innerHTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <h3>Demo on element object properties (data manipulation)</h3>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+    <script>
+        const div1 = document.querySelector("#div1");
+        const div2 = document.querySelector("#div2");
+
+        // Difference between textContent and innerHTML
+
+        div1.textContent = "mangoes <mark>&#8377;400</mark> per dozen";
+
+        div2.innerHTML = "mangoes <mark>&#8377;400</mark> per dozen";
+    </script>
+
+</body>
+</html>
