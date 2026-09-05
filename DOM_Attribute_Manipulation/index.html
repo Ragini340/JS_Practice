@@ -1,0 +1,69 @@
+﻿<!-- 24 - DOM: HTML Attribute Manipulation -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <h3>Demo on element object (HTML attribute manipulations)</h3>
+
+    <img src="a.jpg" width="250" height="160" border="5">
+    <br>
+
+    <input type="text" id="una" size="50">
+    <br>
+
+    <script>
+        /*
+        Attribute / settings manipulations:
+
+        eleobj.attribute
+        eleobj.getAttribute("attr")
+
+        eleobj.attribute = value
+        eleobj.setAttribute("attr", value)
+
+        eleobj.attribute = ""
+        eleobj.removeAttribute("attr")
+        */
+
+        // Changing image settings
+        const img = document.querySelector("img");
+
+        document.write(img.src, `<br>`);
+        // or img.getAttribute("src");
+
+
+        // Modifying attributes
+        img.title = "some random flower";
+        // or img.setAttribute("title", "some random flower");
+
+        img.src = "b.jpg";
+        img.width = "300";
+
+
+        // Deleting attribute
+        img.removeAttribute("border");
+
+
+        // Changing input settings
+        const una = document.querySelector("#una");
+
+        document.write(una.type, `<br>`);
+        // or una.getAttribute("type");
+
+        una.placeholder = "enter username";
+        // or una.setAttribute("placeholder", "username");
+
+        una.maxLength = 10;
+        // or una.setAttribute("maxlength", 10);
+
+        una.removeAttribute("size");
+    </script>
+
+</body>
+</html>
