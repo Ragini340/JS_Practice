@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS</title>
+
+    <style>
+        .heading {
+            width: 50%;
+            border-radius: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>DOM styles manipulations</h1>
+
+    <img src="images/a.jpg" width="200" height="150">
+
+    <h2 style="background:yellow; color:red;">Hello Ragini</h2>
+
+    <script>
+        // Selecting image
+        const i = document.querySelector("img");
+
+        // Applying styles
+        i.style.borderRadius = "20%";
+        i.style.boxShadow = "0 0 15px red";
+
+
+        // Selecting h2
+        const h = document.querySelector("h2");
+
+        // Reading inline styles
+        document.write(
+            h.style.color,
+            " ",
+            h.style.background,
+            `<br>`
+        );
+
+
+        // Applying styles directly
+        // h.style.width = "50%";
+        // h.style.borderRadius = "15px";
+        // h.style.textAlign = "center";
+
+
+        // Adding class to element
+        h.classList.add("heading");
+
+
+        // Removing class from element
+        // h.classList.remove("heading");
+
+
+        // Adding/removing class as toggle
+        // h.classList.toggle("heading");
+    </script>
+
+</body>
+</html>
