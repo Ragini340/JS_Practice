@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <h3>Demo on removing element & adding element</h3>
+
+    <div id="div1">
+
+        <img src="images/s26.jpg" width="130" height="160">
+
+        <h2>Samsung Galaxy S26</h2>
+
+        <strong>&#8377;100000</strong>
+
+        <br>
+
+        <!-- Deleting element -->
+        <button id="bt1"
+                onclick="document.querySelector('#div1').remove()">
+            delete element
+        </button>
+
+    </div>
+
+    <br><br>
+
+    <div id="div2">
+
+        <button type="button"
+                id="bt2"
+                onclick="addElement()">
+            add element
+        </button>
+
+    </div>
+
+    <script>
+
+        // Defining function
+        function addElement() {
+
+            // Creating img object
+            const newele = document.createElement("img");
+
+            // Attributes settings
+            newele.src = "images/a.jpg";
+            newele.id = "i1";
+
+            // Applying styles
+            newele.style.width = "200px";
+            newele.style.height = "200px";
+
+            // Adding new element to div2
+            document.querySelector("#div2").appendChild(newele);
+        }
+
+    </script>
+
+</body>
+</html>
