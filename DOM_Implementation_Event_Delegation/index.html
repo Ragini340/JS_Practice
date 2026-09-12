@@ -1,0 +1,45 @@
+﻿<!-- 29 - DOM Implementation: Deleting Element Using Event Delegation -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM</title>
+    <link rel="icon" href="logo.png" />
+</head>
+
+<body>
+
+    <h2>Deleting Element (Using Delegation)</h2>
+
+    <div id="container">
+        <div style="width:50%;">
+            Apple <button class="bt">❌</button>
+        </div>
+
+        <div>
+            Mango <button class="bt">❌</button>
+        </div>
+
+        <div>
+            Orange <button class="bt">❌</button>
+        </div>
+    </div>
+
+    <script>
+        // Getting container object & attaching event handler
+        document.querySelector("#container").addEventListener(
+            "click",
+            function(evt) {
+
+                console.log(evt.target.classList.value);
+
+                if (evt.target.classList.value === "bt") {
+                    evt.target.parentElement.remove();
+                }
+            }
+        );
+    </script>
+
+</body>
+</html>
