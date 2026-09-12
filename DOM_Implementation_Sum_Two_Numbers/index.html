@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM</title>
+    <link rel="icon" href="logo.png" />
+</head>
+
+<body>
+
+    <h2>Finding Sum of 2 Numbers</h2>
+
+    <label for="firstNum">First Number</label>
+    <br>
+
+    <input type="number" id="firstNum">
+    <br>
+
+    <label for="secNum">Second Number</label>
+    <br>
+
+    <input type="number" id="secNum">
+    <br>
+
+    <button type="button" id="bt">Addition</button>
+
+    <br><br>
+
+    <output id="op"></output>
+
+    <script>
+        // Getting button object
+        const bob = document.getElementById("bt");
+
+        // Attaching event handler
+        bob.onclick = function() {
+
+            let x, y, s; // Local variables
+
+            // Collecting the value from input elements & parsing
+            x = +document.getElementById("firstNum").value;
+            y = +document.getElementById("secNum").value;
+
+            console.log(x, y);
+
+            // Finding sum
+            s = x + y;
+
+            // Getting output object and assigning result
+            document.getElementById("op").value = "Sum is " + s;
+        };
+    </script>
+
+</body>
+</html>
