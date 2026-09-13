@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM</title>
+    <link rel="icon" href="logo.png" />
+
+    <style>
+        .dark {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Dark/Lite Mode Changing</h2>
+
+    <h3>Maruti Suzuki XL7</h3>
+
+    <p>
+        Suzuki has released the first official image of the facelifted
+        <strong>XL7</strong> ahead of its <em>29 July</em> debut at GIIAS 2026.
+        The model, already sold in ASEAN markets, features a redesigned
+        chrome grille with black inserts, sharper headlights, new fog lamp
+        housings, updated alloy wheels, and
+        <mark>smoked LED tail lamps</mark>.
+    </p>
+
+    <h1>
+        <u><em>Ragini</em></u>
+    </h1>
+
+    <h3>Vivo X300 5G</h3>
+
+    <div>
+        Offer <strong>&#8377;80000</strong>
+        MRP: <del>&#8377;100000</del>
+        &nbsp;&nbsp;
+        <mark>20%</mark> discount
+    </div>
+
+    <br>
+
+    <button id="bt">Dark/Lite Mode</button>
+
+    <script>
+        // Getting object & attaching event handler
+        document.querySelector("#bt").onclick = function() {
+
+            // document.body.classList.add("dark");
+            // document.body.classList.remove("dark");
+
+            document.body.classList.toggle("dark");
+        };
+    </script>
+
+</body>
+</html>
