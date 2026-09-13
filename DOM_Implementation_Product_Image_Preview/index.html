@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM</title>
+    <link rel="icon" href="logo.png" />
+
+    <style>
+        .container {
+            display: inline-block;
+            border: 2px solid;
+            border-radius: 15px;
+            padding: 15px;
+            margin-left: 30%;
+            text-align: center;
+        }
+
+        .preview {
+            width: 400px;
+            height: 340px;
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            border: 2px solid blue;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Changing Product Image</h2>
+
+    <div class="container">
+
+        <img src="images/a.png"
+             alt="sneaker"
+             class="preview">
+
+        <br><br>
+
+        <img src="images/a.png" alt="sneaker" class="icon">
+        <img src="images/b.png" alt="sneaker" class="icon">
+        <img src="images/c.png" alt="sneaker" class="icon">
+        <img src="images/d.png" alt="sneaker" class="icon">
+
+    </div>
+
+    <script>
+
+        // Getting preview object
+        const prev = document.images[0];
+
+        // Event handling on image 1
+        document.images[1].onmouseover = function() {
+            prev.src = "images/sneak1.jpg";
+        };
+
+
+        // Event handling on image 2
+        document.images[2].onmouseover = function() {
+            prev.src = "images/sneak2.jpg";
+        };
+
+
+        // Event handling on image 3
+        document.images[3].onmouseover = function() {
+            prev.src = "images/sneak3.jpg";
+        };
+
+
+        // Event handling on image 4
+        document.images[4].onmouseover = function() {
+            prev.src = "images/sneak4.jpg";
+        };
+
+
+        // Event handling on image 5
+        document.images[5].onmouseover = function() {
+            prev.src = "images/sneak5.jpg";
+        };
+
+    </script>
+
+</body>
+</html>
