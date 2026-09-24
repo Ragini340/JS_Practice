@@ -1,0 +1,33 @@
+﻿<!-- example on JS Control Statements -->
+<script>
+    /**
+      to print 1 to 20 numbers
+    **/
+    document.write(`demo on while loop<br>`);
+
+    let i = 1; // init
+
+    while (i <= 20) // condition
+    {
+        document.writeln(i);
+        i++; // step
+    }
+
+    document.write(`<br>demo on for loop<br>`);
+
+    for (let j = 1; j <= 20; j++) // j is block level
+    {
+        document.writeln(j);
+    }
+
+    //document.writeln(j); RE
+
+    document.write(`<br>demo on do while loop<br>`);
+
+    let k = 1;
+
+    do {
+        document.writeln(k);
+        k++;
+    } while (k <= 20);
+</script>
