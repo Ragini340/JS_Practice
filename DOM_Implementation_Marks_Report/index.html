@@ -1,0 +1,78 @@
+﻿<!-- finding student grade
+Avg     grade
+90-100  A+
+80-89   A
+70-79   B+
+60-69   B
+50-59   C
+40-49   D
+0-39    Fail
+Note:   min marks in subject 40
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <link rel="stylesheet" href="marksreport.css">
+</head>
+
+<body>
+
+    <table align="center">
+        <caption><h2>Marks Report</h2></caption>
+
+        <tr>
+            <td><label>RollNo</label></td>
+            <td><input type="text" id="slno" autofocus></td>
+        </tr>
+
+        <tr>
+            <td><label>Name</label></td>
+            <td><input type="text" id="sna"></td>
+        </tr>
+
+        <tr>
+            <td><label>Marks in:</label></td>
+        </tr>
+
+        <tr>
+            <td><label>HTML</label></td>
+            <td><input type="text" id="html" maxlength="3"></td>
+        </tr>
+
+        <tr>
+            <td><label>CSS</label></td>
+            <td><input type="text" id="css" maxlength="3"></td>
+        </tr>
+
+        <tr>
+            <td><label>JavaScript</label></td>
+            <td><input type="text" id="js" maxlength="3"></td>
+        </tr>
+
+        <tr>
+            <td><label>BootStrap</label></td>
+            <td><input type="text" id="bs" maxlength="3"></td>
+        </tr>
+
+        <tr align="center">
+            <td colspan="2">
+                <button onclick="getResult()">get result</button>
+            </td>
+        </tr>
+
+        <tr align="center">
+            <td colspan="2">
+                <output id="total"></output><br>
+                <output id="average"></output><br>
+                <output id="grade"></output><br>
+            </td>
+        </tr>
+
+    </table>
+
+    <script src="marksreport.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+﻿/* defining styles for marks report */
+
+table {
+    width: 300px;
+    margin: auto;
+    background: yellow;
+    color: blue;
+    padding: 20px;
+}
+
+input {
+    outline: none;
+    font-size: 20px;
+}
