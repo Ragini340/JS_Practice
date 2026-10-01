@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reset Page</title>
+    <link rel="stylesheet" href="resetpw.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Password Reset Form</h2>
+
+        <form id="frm" action="reset.html" method="post">
+
+            <div class="form-group">
+                <label for="npwd">New Password</label>
+                <input type="password"
+                       id="npwd"
+                       name="npwd"
+                       required
+                       placeholder="enter new password">
+
+                <span class="toggle-password" id="msg">Show</span>
+            </div>
+
+            <div class="form-group">
+                <label for="cpwd">Confirm Password</label>
+                <input type="password"
+                       id="cpwd"
+                       name="cpwd"
+                       required
+                       placeholder="retype password">
+            </div>
+
+            <div>
+                <button type="submit" id="sb">Reset Password</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="resetpw.js"></script>
+</body>
+</html>
