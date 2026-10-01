@@ -1,0 +1,45 @@
+﻿<!-- example on JS Arrays -->
+<script>
+    document.write(`demo on de-structure<br>`);
+
+    const a = [12, 34, 56];
+
+    // let x=a[0], y=a[1], z=a[2];  Or
+    let [x, y, z] = a; // array destructuring
+
+    document.write(`x ${x}<br>y ${y}<br>z ${z}<br>`);
+
+    const ob1 = { i: 11, j: 22 };
+
+    let { i, j } = ob1; // object destructuring
+
+    // let [i1,i2,i3]=document.images;
+
+    document.write(`i ${i}<br>j ${j}<br>`);
+
+    const arr = [
+        'html',
+        'css',
+        'js',
+        'bs',
+        'react',
+        'angular',
+        'jquery',
+        'node'
+    ];
+
+    let [p, q, r] = arr; // destructuring
+
+    document.write(`p ${p}<br>q ${q}<br>r ${r}<br>`);
+
+    let [k, , , ...l] = arr;
+
+    document.write(`k ${k}<br>l ${l}<br>`);
+
+    let v1 = 121,
+        v2 = 565;
+
+    [v2, v1] = [v1, v2]; // swapping
+
+    document.write(`v1 ${v1}<br>v2 ${v2}<br>`);
+</script>
