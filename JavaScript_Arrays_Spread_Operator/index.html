@@ -1,0 +1,38 @@
+﻿<!-- example on JS Arrays -->
+<script>
+    document.write(`demo on spread operator<br>`);
+
+    const a = [10, 20, 30, 40];
+
+    let b = [...a]; // array copying
+
+    document.write(`A ${a}<br>`);
+    document.write(`B ${b}<br>`);
+
+    // object init
+    const ob1 = { x: 11, y: 22 };
+
+    // const ob2 = ob1;  <= it copies ref
+    const ob2 = { ...ob1 };
+
+    document.write(`ob1 ${ob1.x}, ${ob1.y}<br>`);
+    document.write(`ob2 ${ob2.x}, ${ob2.y}<br>`);
+
+    const c = [10, 20, 10, 30, 40, 10, 50, 10, 20];
+
+    const d = [...new Set(c)]; // removing duplicates
+
+    document.write(`D ${d}<br>`);
+
+    const ft = ['html', 'css', 'js', 'bs'];
+    const bt = ['java', 'python', 'dot.net'];
+    const db = ['oracle', 'mongodb'];
+
+    const full = [...ft, ...bt, ...db]; // array merge
+
+    document.write(`Full ${full}<br>`);
+
+    const full2 = [...ft, 'react', ...bt, 'node'];
+
+    document.write(`Full2 ${full2}<br>`);
+</script>
