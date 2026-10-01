@@ -1,0 +1,55 @@
+﻿<!-- HTML & JS control statements -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Calc</title>
+    <link rel="stylesheet" href="minicalc.css">
+</head>
+
+<body>
+
+    <!-- main container -->
+    <div class="calculator">
+        <h1>Mini Calculator</h1>
+
+        <input type="text" class="display" id="tBox" readonly />
+
+        <!-- main div -->
+        <div>
+
+            <!-- rows -->
+            <div class="row">
+                <button type="button" value="7">7</button>
+                <button type="button" value="8">8</button>
+                <button type="button" value="9">9</button>
+                <button type="button" value="+" class="operator">+</button>
+            </div>
+
+            <div class="row">
+                <button type="button" value="4">4</button>
+                <button type="button" value="5">5</button>
+                <button type="button" value="6">6</button>
+                <button type="button" value="-" class="operator">-</button>
+            </div>
+
+            <div class="row">
+                <button type="button" value="1">1</button>
+                <button type="button" value="2">2</button>
+                <button type="button" value="3">3</button>
+                <button type="button" value="*" class="operator">*</button>
+            </div>
+
+            <div class="row">
+                <button type="button" value="AC" class="operator">AC</button>
+                <button type="button" value="0">0</button>
+                <button type="button" value="/" class="operator">/</button>
+                <button type="button" value="=" class="operator">=</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="minicalc.js"></script>
+</body>
+</html>
