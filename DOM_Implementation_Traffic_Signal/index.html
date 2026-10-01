@@ -1,0 +1,44 @@
+﻿<!-- JS DOM Applications -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic Signal Simulator</title>
+</head>
+<body>
+
+    <h2>🚦 Traffic Signal Simulator</h2>
+
+    <button type="button" id="redBt" value="red">Red</button> &nbsp;
+    <button type="button" id="yelBt" value="yellow">Yellow</button> &nbsp;
+    <button type="button" id="grnBt" value="green">Green</button>
+
+    <h3 id="msg">Select a Signal</h3>
+
+    <script>
+        // getting buttons objects & attach event handler
+        document.querySelector("#redBt").addEventListener("click", signal);
+        document.querySelector("#yelBt").addEventListener("click", signal);
+        document.querySelector("#grnBt").addEventListener("click", signal);
+
+        // function definition
+        function signal(event) {
+
+            // getting button value which user pressed
+            let bVal = event.target.value;
+            console.log(bVal);
+
+            // getting h3 object
+            const h = document.querySelector("#msg");
+
+            if (bVal === "red")
+                h.innerHTML = "🛑 STOP";
+            else if (bVal === "yellow")
+                h.innerHTML = "⚠ Ready";
+            else if (bVal === "green")
+                h.innerHTML = "🟢 GO";
+        }
+    </script>
+
+</body>
+</html>
