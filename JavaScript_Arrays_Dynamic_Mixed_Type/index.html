@@ -1,0 +1,44 @@
+﻿<!-- example on JS Arrays -->
+<script>
+    document.write(`demo on arrays<br>`);
+
+    // array supports different types of data
+    const a = [
+        'siva',
+        46,
+        true,
+        5.92,
+        new Date(1982, 8, 30, 6, 0)
+    ];
+
+    document.write(a + `<br>`);
+
+    // dynamic array
+    const b = [11, 22, 33, 44, 55, 66, 77, 88, 99];
+
+    document.write("B " + b + `<br>`);
+
+    // decrease size
+    b.length = 5;
+
+    document.write("B " + b + `<br>`);
+
+    // increase size
+    b.length = 7;
+    b[5] = 111;
+    b[6] = 222;
+
+    document.write("B " + b + `<br>`);
+
+    // b.length = 0;
+
+    // array declaration
+    const c = [];
+
+    let n = +prompt("enter no of values");
+
+    for (let i = 0; i < n; i++)
+        c[i] = prompt("enter array value");
+
+    document.write("C " + c);
+</script>
