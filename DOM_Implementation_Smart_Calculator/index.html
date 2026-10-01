@@ -1,0 +1,78 @@
+﻿<!-- JS DOM Applications -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+</head>
+<body>
+
+    <h2>Smart Calculator</h2>
+
+    <input type="number" id="firstNum" placeholder="First number">
+
+    <select id="operator">
+        <option value="+"> + </option>
+        <option value="-"> - </option>
+        <option value="*"> * </option>
+        <option value="/"> / </option>
+        <option value="%"> % </option>
+        <option value="^"> ^ </option>
+    </select>
+
+    <input type="number" id="secNum" placeholder="Second number">
+
+    <button type="button" id="bt">Calculate</button>
+    <br><br>
+
+    <output id="op"></output>
+
+    <script>
+        // getting button & event handler
+        document.querySelector("#bt").onclick = function () {
+
+            // getting values & parsing
+            let fn = +document.querySelector("#firstNum").value;
+            let sn = +document.querySelector("#secNum").value;
+            let ope = document.querySelector("#operator").value;
+
+            let res;
+
+            // checking which operator selected by user
+            switch (ope) {
+                case "+":
+                    res = fn + sn;
+                    break;
+
+                case "-":
+                    res = fn - sn;
+                    break;
+
+                case "*":
+                    res = fn * sn;
+                    break;
+
+                case "/":
+                    if (sn === 0) {
+                        res = "Cannot Divide By 0";
+                    } else {
+                        res = fn / sn;
+                    }
+                    break;
+
+                case "%":
+                    res = fn % sn;
+                    break;
+
+                case "^":
+                    res = fn ** sn;
+                    break;
+            }
+
+            // displaying result
+            document.querySelector("#op").textContent = "Result " + res;
+        };
+    </script>
+
+</body>
+</html>
