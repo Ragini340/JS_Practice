@@ -1,0 +1,26 @@
+﻿<!-- example on JS Arrays -->
+<script>
+    document.write(`demo on nested arrays<br>`);
+
+    const a = [
+        [10, 20, 30],
+        [11, 22, 33]
+    ];
+
+    document.write(`A ` + a + `<br>`);
+    document.write(a[0] + `<br>`);
+    document.write(a[1] + `<br>`);
+
+    document.write(a.length + `<br>`);
+    document.write(a[0].length + `<br>`);
+    document.write(a[1].length + `<br>`);
+
+    for (let i = 0; i < a.length; i++) {
+        for (let j = 0; j < a[i].length; j++)
+            document.writeln(a[i][j]);
+
+        document.write(`<br>`);
+    }
+
+    console.table(a);
+</script>
